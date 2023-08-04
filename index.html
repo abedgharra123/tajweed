@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تجويد</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles for dark mode and RTL layout */
+    body {
+      background-color: #212529;
+      color: #fff;
+      direction: rtl;
+      text-align: right;
+    }
+
+    /* Custom navbar styles */
+    .navbar-custom {
+      background-color: #1a1f27;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .navbar-custom .navbar-nav .nav-link:hover {
+      color: #d1d1d1;
+    }
+
+    .navbar-custom .navbar-nav .active > .nav-link,
+    .navbar-custom .navbar-nav .nav-link.active,
+    .navbar-custom .navbar-nav .nav-link.show,
+    .navbar-custom .navbar-nav .show > .nav-link {
+      color: #d1d1d1;
+      background-color: #1c2129;
+    }
+
+    /* Custom lecture styles */
+    .lecture {
+      border: 1px solid #fff;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #1c2129;
+      margin-bottom: 20px;
+    }
+
+    .lecture h2 {
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="bg-dark text-light">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">تجويد</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="lecturesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            المحاضرات
+          </a>
+          <div class="dropdown-menu" aria-labelledby="lecturesDropdown">
+            <a class="dropdown-item" href="#lecture1">محاضرة 1</a>
+            <a class="dropdown-item" href="#lecture2">محاضرة 2</a>
+            <!-- Add more lectures here -->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div id="lecture1" class="lecture">
+      <!-- Lecture 1 Content -->
+      <h2>محاضرة 1: المقدمة</h2>
+      <p>
+        مرحبًا بك في المحاضرة الأولى. في هذه المحاضرة، سنقدم الموضوع ونناقش أهميته.
+      </p>
+      <!-- Add more content for Lecture 1 here -->
+    </div>
+
+    <div id="lecture2" class="lecture">
+      <!-- Lecture 2 Content -->
+      <h2>محاضرة 2: الموضوع الرئيسي</h2>
+      <p>
+        في المحاضرة الثانية، سنستكشف الموضوع الرئيسي ونغطي المفاهيم الأساسية المتعلقة به.
+      </p>
+      <!-- Add more content for Lecture 2 here -->
+    </div>
+
+    <!-- Add more lectures here -->
+
+  </div>
+
+  <!-- Bootstrap JS (Make sure to include jQuery and Popper.js before this) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
